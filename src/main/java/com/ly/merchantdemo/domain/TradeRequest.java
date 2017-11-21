@@ -5,11 +5,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
+import java.io.Serializable;
+
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-@Accessors(chain = true)
-public class TradeRequest {
+//@Accessors(fluent = true)
+public class TradeRequest implements Serializable{
+    private static final long serialVersionUID = 3563532561509730709L;
     private String merId;
     private String userId;
     private String outTradeNo;

@@ -8,10 +8,9 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-@Accessors(chain = true)
 public class RequestPayMessageDTO implements Serializable {
+    private static final long serialVersionUID = 4802859787150098739L;
     private String mchId;
     private String tradeUrl;
 }

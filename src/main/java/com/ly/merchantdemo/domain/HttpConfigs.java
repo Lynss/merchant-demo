@@ -1,14 +1,15 @@
 package com.ly.merchantdemo.domain;
 
+import com.sun.jersey.core.util.MultivaluedMapImpl;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
+import javax.ws.rs.core.MediaType;
+
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-@Accessors(chain = true)
+@Accessors(fluent = true)
 public class HttpConfigs {
     private String httpMethod;
     private String encryptType;
@@ -16,7 +17,7 @@ public class HttpConfigs {
     private String baseUrl;
     private String appId;
     private String version ;
-    private String mediaType;
-    private String getQueryParams;
+    private MediaType mediaType;
+    private MultivaluedMapImpl getQueryParams;
     private String postQueryBody;
 }
