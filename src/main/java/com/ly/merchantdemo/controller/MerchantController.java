@@ -42,8 +42,12 @@ public class MerchantController {
 //        tradeRequest.setPmtTag("Weixin");
 //        tradeRequest.setPmtType("4");
         //微信app支付
+//        tradeRequest.setPmtTag("Weixin");
+//        tradeRequest.setPmtType("5");
+        //扫码支付
         tradeRequest.setPmtTag("Weixin");
-        tradeRequest.setPmtType("5");
+        tradeRequest.setPmtType("3");
+
         tradeRequest.setOpenId("8e72156fa71b6b3fc634ed60d66f3538");
         return new MerchantResult<>(MerchantResultEnum.MERCHANT_SUCCESS, tradeRequest);
     }
