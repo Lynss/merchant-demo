@@ -14,8 +14,7 @@
             reply=>{
                 console.log(reply)
                 var data = reply.data
-                $.ajax({
-                    url:"http://localhost:8080/url",
+                $.ajax("http://localhost:8080/url",{
                     method: 'POST',
                     data:JSON.stringify(data),
                     contentType:"application/json"

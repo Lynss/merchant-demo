@@ -12,7 +12,7 @@ import java.io.Serializable;
 //@Accessors(fluent = true)
 public class TradeRequest implements Serializable{
     private static final long serialVersionUID = 3563532561509730709L;
-    private String merId;
+    private String openId;
     private String userId;
     private String outTradeNo;
     private String payeeCusOpenid;
@@ -21,12 +21,15 @@ public class TradeRequest implements Serializable{
     private String payerCusName;
     private String orderName;
     private char orderType;
-    private int originalAmount;
-    private String discountAmount;
-    private int tradeAmount;
+    private Integer originalAmount;
+    private Integer discountAmount;
+    private Integer tradeAmount;
     private String remark;
     private String notifyUrl;
     private String limitPay;
     private String pmtTag;
+    private String pmtType;
     private String sn;
+    private String appId;
+    private String createIp;
 }

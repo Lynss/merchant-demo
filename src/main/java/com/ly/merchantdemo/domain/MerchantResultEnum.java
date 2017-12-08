@@ -10,7 +10,7 @@ public enum MerchantResultEnum implements Serializable{
     FAIL_ENCRYPT_TYPE_NOT_FOUNT(401,"没有合适的加密方式"),
     FAIL_UNSUPPORT_HTTP_METHOD(402,"无法进行对应的http请求");
 
-    private MerchantResultEnum(int code,String message) {
+    MerchantResultEnum(int code,String message) {
         this.code = code;
         this.message = message;
     }
